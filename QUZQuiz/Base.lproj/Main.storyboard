@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="QUZViewController" id="BYZ-38-t0r" customClass="QUZViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiE-8s-Cfn">
+                                <rect key="frame" x="100" y="104" width="400" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="D6T-VY-3Es"/>
+                                    <constraint firstAttribute="height" constant="44" id="rME-Of-RUy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fek-it-xVh">
+                                <rect key="frame" x="100" y="337" width="400" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="5M8-8Q-6KE"/>
+                                    <constraint firstAttribute="width" constant="400" id="OaG-8M-UBR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIP-Q0-wMM">
+                                <rect key="frame" x="100" y="178" width="400" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="AUa-V8-Uvl"/>
+                                    <constraint firstAttribute="width" constant="400" id="pQ5-1S-ldG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                <state key="normal" title="Show Questions">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapShowQuestions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YG9-XH-oBb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lK-Xt-nlt">
+                                <rect key="frame" x="100" y="411" width="400" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Zqw-QQ-pkc"/>
+                                    <constraint firstAttribute="width" constant="400" id="i3n-P3-5Bx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                <state key="normal" title="Show Answers">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapShowAnswers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nFb-rb-vyh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="0lK-Xt-nlt" secondAttribute="centerX" id="NQl-De-olw"/>
+                            <constraint firstAttribute="centerX" secondItem="AiE-8s-Cfn" secondAttribute="centerX" id="cBs-kV-TLL"/>
+                            <constraint firstAttribute="centerX" secondItem="pIP-Q0-wMM" secondAttribute="centerX" id="ctF-HR-0Gp"/>
+                            <constraint firstItem="0lK-Xt-nlt" firstAttribute="top" secondItem="Fek-it-xVh" secondAttribute="bottom" constant="30" id="dGZ-E0-d3K"/>
+                            <constraint firstItem="Fek-it-xVh" firstAttribute="top" secondItem="pIP-Q0-wMM" secondAttribute="bottom" constant="115" id="g3M-PE-cnv"/>
+                            <constraint firstItem="AiE-8s-Cfn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="84" id="maf-Jp-hp0"/>
+                            <constraint firstAttribute="centerX" secondItem="Fek-it-xVh" secondAttribute="centerX" id="pwf-Sy-WMN"/>
+                            <constraint firstItem="pIP-Q0-wMM" firstAttribute="top" secondItem="AiE-8s-Cfn" secondAttribute="bottom" constant="30" id="r5I-Oy-U6z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="Fek-it-xVh" id="QBd-SN-OiA"/>
+                        <outlet property="questionLabel" destination="AiE-8s-Cfn" id="jn5-vy-iSs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
